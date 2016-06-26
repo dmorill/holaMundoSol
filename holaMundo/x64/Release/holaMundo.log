@@ -1,0 +1,6 @@
+﻿  Source.cpp
+Source.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating code
+  All 10 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  holaMundo.vcxproj -> C:\Users\Daniel_Valencia\Documents\Visual Studio 2015\Projects\holaMundoSol\x64\Release\holaMundo.exe
