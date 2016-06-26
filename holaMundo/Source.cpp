@@ -21,6 +21,6 @@ int main() {
 void mostrarVector(vector<int> &v) {
 	vector<int>::iterator it = v.begin();
 	for (; it != v.end(); it++) {
-		cout << *it << endl;
+		cout << "[" <<*it <<"]" << endl;
 	}
 }
