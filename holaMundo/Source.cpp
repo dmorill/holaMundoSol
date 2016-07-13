@@ -4,23 +4,25 @@
 using namespace std;
 
 void mostrarVector(vector<int> &v);
-random_device rd;
-mt19937 generator(rd());
-uniform_real_distribution<double> distUni(0.0, 1.0);
 
 int main() {
 	vector<int> v;
+	vector<int> v2;
+	vector<int> v3;
+	cout << "Hola mundo." << endl << endl;
 
 	for (int i = 0; i < 10; i++) {
 		v.push_back(i);
-	}
-	cout << "Hola mundo." << endl;
-
-	for (int i = 0; i < 20; i++) {
-		cout << generator() << "           " << rd() << endl;
+		v2.push_back(i + 10);
 	}
 	
-
+	mostrarVector(v);
+	mostrarVector(v2);
+	vector<int>::iterator it = v3.begin();
+	v3.insert(it, v.begin(), v.end() - (v.size()/2));
+	it = v3.end();
+	v3.insert(it, v2.begin() + (v.size()/2), v2.end());
+	mostrarVector(v3);
 	//mostrarVector(v);
 
 	cin.get();
@@ -32,4 +34,5 @@ void mostrarVector(vector<int> &v) {
 	for (; it != v.end(); it++) {
 		cout << "[" <<*it <<"]" << endl;
 	}
+	cout << endl;
 }
