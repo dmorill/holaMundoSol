@@ -16,6 +16,8 @@ int main() {
 		v2.push_back(i + 10);
 	}
 	
+	cout << "Hola Hermosa!" << endl << endl;
+
 	mostrarVector(v);
 	mostrarVector(v2);
 	vector<int>::iterator it = v3.begin();
