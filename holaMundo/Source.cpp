@@ -1,16 +1,12 @@
 #include <iostream>;
 #include <vector>;
-<<<<<<< HEAD
 #include <random>
-=======
->>>>>>> parent of 9f3de75... Eliminar caracteres de txt
 using namespace std;
 
 void mostrarVector(vector<int> &v);
 
 int main() {
 	vector<int> v;
-<<<<<<< HEAD
 	vector<int> v2;
 	vector<int> v3;
 	cout << "Hola mundo." << endl << endl;
@@ -29,16 +25,6 @@ int main() {
 	mostrarVector(v3);
 	//mostrarVector(v);
 
-=======
-
-	for (int i = 0; i < 10; i++) {
-		v.push_back(i);
-	}
-	cout << "Hola mundo.";
-
-	mostrarVector(v);
-
->>>>>>> parent of 9f3de75... Eliminar caracteres de txt
 	cin.get();
 	return 0;
 }
@@ -48,8 +34,5 @@ void mostrarVector(vector<int> &v) {
 	for (; it != v.end(); it++) {
 		cout << "[" <<*it <<"]" << endl;
 	}
-<<<<<<< HEAD
 	cout << endl;
-=======
->>>>>>> parent of 9f3de75... Eliminar caracteres de txt
 }
