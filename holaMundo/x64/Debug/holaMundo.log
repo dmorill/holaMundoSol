@@ -1,4 +1,8 @@
 ﻿  Source.cpp
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+<<<<<<< HEAD
   holaMundo.vcxproj -> C:\Users\Daniel_Valencia\Documents\Visual Studio 2015\Projects\holaMundoSol\x64\Debug\holaMundo.exe
+=======
+  holaMundo.vcxproj -> C:\Users\Daniel_Valencia\documents\visual studio 2015\Projects\holaMundoSol\x64\Debug\holaMundo.exe
+>>>>>>> parent of 9f3de75... Eliminar caracteres de txt
