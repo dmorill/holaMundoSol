@@ -9,7 +9,7 @@ int main() {
 	vector<int> v;
 	vector<int> v2;
 	vector<int> v3;
-	cout << "Adiós mundo." << endl << endl;
+	cout << "Hola mundo." << endl << endl;
 
 	for (int i = 0; i < 10; i++) {
 		v.push_back(i);
@@ -22,7 +22,6 @@ int main() {
 	v3.insert(it, v.begin(), v.end() - (v.size()/2));
 	it = v3.end();
 	v3.insert(it, v2.begin() + (v.size()/2), v2.end());
-	//Nota:
 	mostrarVector(v3);
 	//mostrarVector(v);
 
