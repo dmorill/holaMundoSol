@@ -1,31 +1,25 @@
 #include <iostream>;
 #include <vector>;
-#include <random>
+#include <time.h>;		//  <------- libreria
+
 using namespace std;
 
 void mostrarVector(vector<int> &v);
 
 int main() {
+	clock_t tInicial = clock();   //  <---- donde empieza a contar
+
 	vector<int> v;
-	vector<int> v2;
-	vector<int> v3;
-	cout << "Hola mundo." << endl << endl;
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 5000000; i++) {
 		v.push_back(i);
-		v2.push_back(i + 10);
 	}
-	
-	cout << "Hola Hermosa!" << endl << endl;
 
-	mostrarVector(v);
-	mostrarVector(v2);
-	vector<int>::iterator it = v3.begin();
-	v3.insert(it, v.begin(), v.end() - (v.size()/2));
-	it = v3.end();
-	v3.insert(it, v2.begin() + (v.size()/2), v2.end());
-	mostrarVector(v3);
-	//mostrarVector(v);
+	clock_t tFinal = clock() - tInicial; //  <---- clock() es el tiempo ahora!!!! por eso resto
+	double tiempo = tFinal / double(CLOCKS_PER_SEC);  // <--- transformar segundos se divide por la
+					// cosntante CLOCKS_PER_SEC, depende del sistema suele ser 1000.								
+	
+	cout << "El algoritmo uso: " << tiempo << " segundos." << endl; //   <---- mostrar el tiempo
 
 	cin.get();
 	return 0;
