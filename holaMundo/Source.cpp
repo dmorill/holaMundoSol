@@ -1,34 +1,34 @@
 #include <iostream>;
 #include <vector>;
-#include <time.h>;		//  <------- libreria
+
+#include <iostream>;
+#include <vector>;
+
 
 using namespace std;
 
-void mostrarVector(vector<int> &v);
-
 int main() {
-	clock_t tInicial = clock();   //  <---- donde empieza a contar
+	int i = 0;
+	vector<int> v(10, 50);
+	v.back() = 8;
 
-	vector<int> v;
-
-	for (int i = 0; i < 5000000; i++) {
-		v.push_back(i);
-	}
-
-	clock_t tFinal = clock() - tInicial; //  <---- clock() es el tiempo ahora!!!! por eso resto
-	double tiempo = tFinal / double(CLOCKS_PER_SEC);  // <--- transformar segundos se divide por la
-					// cosntante CLOCKS_PER_SEC, depende del sistema suele ser 1000.								
+	int *pi = &(v[0]);
+	int *p = &v[9];
+	cout << "Dirección del puntero:  " << p << endl;
+	cout << "contenido del puntero:  " << *p << endl << endl;
 	
-	cout << "El algoritmo uso: " << tiempo << " segundos." << endl; //   <---- mostrar el tiempo
+	v.push_back(100);
+	cout << "haciendo pusch_back" << endl << endl;
+	cout << "Dirección del puntero:  " << p << endl;
+	cout << "contenido del puntero:  " << *p << endl << endl;
+
+	int aux = p - pi;
+	p = &(v[0]) + aux;
+
+	cout << "aux = " << aux << endl;
+	cout << "Dirección del puntero:  " << p << endl;
+	cout << "contenido del puntero:  " << *p << endl << endl;
 
 	cin.get();
 	return 0;
-}
-
-void mostrarVector(vector<int> &v) {
-	vector<int>::iterator it = v.begin();
-	for (; it != v.end(); it++) {
-		cout << "[" <<*it <<"]" << endl;
-	}
-	cout << endl;
 }

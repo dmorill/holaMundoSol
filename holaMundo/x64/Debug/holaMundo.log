@@ -1,5 +1,7 @@
 ﻿  Source.cpp
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  holaMundo.vcxproj -> C:\Users\Daniel_Valencia\documents\visual studio 2015\Projects\holaMundoSol\x64\Debug\holaMundo.exe
+c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(5): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(25): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  holaMundo.vcxproj -> C:\Users\Daniel_Valencia\Documents\Visual Studio 2015\Projects\holaMundoSol\x64\Debug\holaMundo.exe
