@@ -2,5 +2,6 @@
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(3): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(40): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+c:\users\daniel_valencia\documents\visual studio 2015\projects\holamundosol\holamundo\source.cpp(33): warning C4715: 'listaDire': not all control paths return a value
   holaMundo.vcxproj -> C:\Users\Daniel_Valencia\Documents\Visual Studio 2015\Projects\holaMundoSol\x64\Debug\holaMundo.exe

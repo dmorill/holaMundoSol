@@ -6,11 +6,18 @@
 using namespace std;
 
 string path(int x);
+vector<string> listaDire(string donde, string nombre);
 
 int main() {
 	string direDonde = path(1);		//obtener el path
+	vector<string> vS = listaDire(direDonde, "hola.txt");
+	
+	cin.get();
+	return 0;
+}
 
-	fstream archivo(direDonde + "hola.txt", fstream::in);
+vector<string> listaDire(string donde, string nombre) {
+	fstream archivo(donde + nombre, fstream::in);
 	if (archivo.is_open() == true) {
 		vector<string> vS;
 		string auxS;
@@ -18,14 +25,12 @@ int main() {
 			vS.push_back(auxS);
 		}
 		archivo.close();
-	}else {
+		return vS;
+	}
+	else {
 		cout << "horror!!!";
 	}
-	
-	cin.get();
-	return 0;
 }
-
 
 string path(int x){
 	char* p;
