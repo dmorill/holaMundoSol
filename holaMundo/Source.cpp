@@ -2,20 +2,21 @@
 #include <vector>;
 #include <string>;
 #include <fstream>
-
+#include <ctime>
 using namespace std;
 
 string path(int x);
 
 int main(int argc, char** argv) {
-	string direDonde = path(1);		//obtener el path
-
-	cout << "Have " << argc << " argumetns:" << endl;
-	for (int i = 0; i < argc; ++i) {
-		cout << argv[i] << endl;
+	// string direDonde = path(1);		//obtener el path
+	clock_t t1 = clock(), t2 = 0;
+	double total = 0;
+	for (int i = 0; i < 2000000000; i++) {
+		total += i;
 	}
-
-	cin.get();
+	t2 = clock() - t1;
+	cout << t2 / double(CLOCKS_PER_SEC);
+	//cin.get();
 	return 0;
 }
 
